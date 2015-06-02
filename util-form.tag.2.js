@@ -1,6 +1,6 @@
 $(document).on('DOMNodeInserted', '.toast-success', function(e) {
     
-    dataLayer.push({event:'gaevent',eventCategory:'Conversion',eventAction: 'Contactar',eventLabel: ''});
+    dataLayer.push({'event':'virtualPage', 'page': '/formulario_enviado', 'pageTitle': 'Gracias por registrarte'});
 
 });
 
