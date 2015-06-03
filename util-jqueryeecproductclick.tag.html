@@ -1,0 +1,29 @@
+<script>
+//Load jQuery if not already loaded
+if(!window.jQuery) {
+   var script = document.createElement('script');
+   script.type = "text/javascript";
+   script.src = "//code.jquery.com/jquery-1.11.0.min.js";
+   document.getElementsByTagName('head')[0].appendChild(script);
+} 
+//Add a jQuery click listener to each product
+try {
+	$('[data-product-id]').click(function () {
+		dataLayer.push({
+			'event': 'productClick',
+			'ecommerce': {
+			  'click': {
+				'actionField': {'list': 'Productos recomendados'},
+				'products': [
+				 {
+					'name': $(this).data('product-name'),       
+					'id': $(this).data('product-id')
+				 }]
+			  }
+			}
+		  });
+	  });
+} catch (e) {
+	console.log(e);
+}
+</script>
