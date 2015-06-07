@@ -12,7 +12,7 @@ $(document).on('DOMNodeInserted', '.error', function(e) {
 	
 	field = element.getAttribute('for');
     
-    dataLayer.push({event:'gaevent',eventCategory:'ERROR',eventAction: 'Contactar',eventLabel: field + ':' + element.textContent});
+    dataLayer.push({event:'gaEvent',eventCategory:'ERROR',eventAction: 'Contactar',eventLabel: field + ':' + element.textContent});
     
     
 });
