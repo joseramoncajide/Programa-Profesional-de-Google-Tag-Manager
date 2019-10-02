@@ -42,7 +42,8 @@ $('#addToCart').parents('.member').find('.thin').text().split(" ")[0]
 
 ```javascript
 // Javascript
-document.getElementById("addToCart").addEventListener("mouseover",function(event) {
+let e = document.getElementById("addToCart")
+e.addEventListener("mouseover",function(event) {
   console.log("Agregado al carrito")
 });
 
