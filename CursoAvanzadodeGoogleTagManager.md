@@ -45,11 +45,14 @@ $('#addToCart').parents('.member').find('.thin').text().split(" ")[0]
 let e = document.getElementById("addToCart")
 e.addEventListener("mouseover",function(event) {
   console.log("Agregado al carrito")
+  /* PON AQUÍ TU CODIGO */
+
 });
 
 // JQuery
 $('#addToCart').mouseover(function(event) {
   console.log("Agregado al carrito")
+  /* PON AQUÍ TU CODIGO */
 });
 ```
 
